@@ -364,7 +364,7 @@ namespace Unity.RenderStreaming
             public override WaitForCreateTrack CreateTrack()
             {
                 var instruction = new WaitForCreateTrack();
-                instruction.Done(new AudioStreamTrack(m_audioListener));
+                //instruction.Done(new AudioStreamTrack(m_audioListener));
                 return instruction;
             }
 
@@ -509,7 +509,7 @@ namespace Unity.RenderStreaming
 
             public void SetData(NativeArray<float>.ReadOnly nativeArray, int channels, int sampleRate)
             {
-                m_audioTrack?.SetData(nativeArray, channels, sampleRate);
+                // m_audioTrack?.SetData(nativeArray, channels, sampleRate);
             }
 
             public override void Dispose()
